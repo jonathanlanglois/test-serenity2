@@ -9,7 +9,7 @@ curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 curl https://packages.microsoft.com/config/debian/11/prod.list > /etc/apt/sources.list.d/mssql-release.list
 apt-get update
 
-ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
 
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 apt-get install -y nodejs
