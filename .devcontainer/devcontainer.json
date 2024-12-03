@@ -1,0 +1,28 @@
+{
+  "name": ".NET in Codespaces",
+  "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+            "ms-vscode.vscode-node-azure-pack",
+            "ms-dotnettools.vscode-dotnet-runtime",
+            "ms-dotnettools.csdevkit",
+            "ms-dotnettools.csharp"
+          ]
+      }
+  },
+  "forwardPorts": [
+      5000
+  ],
+  "postCreateCommand": "./.devcontainer/initEnv.sh",
+  "remoteEnv": {
+      "DOTNET_MULTILEVEL_LOOKUP": "0",
+      "TARGET": "net8.0"
+  },
+  "portsAttributes": {
+      "5000": {
+          "label": "Serenity",
+          "onAutoForward": "notify"
+      }
+  }
+}
