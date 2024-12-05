@@ -74,6 +74,31 @@ namespace texts {
                 export const Year: string;
             }
         }
+
+        namespace Games {
+
+            namespace Games {
+                export const Genre: string;
+                export const Id: string;
+                export const Name: string;
+                export const PlatformId: string;
+                export const PlatformName: string;
+                export const Year: string;
+            }
+
+            namespace Logs {
+                export const Action: string;
+                export const EntityId: string;
+                export const EntityName: string;
+                export const Id: string;
+            }
+
+            namespace Platforms {
+                export const Id: string;
+                export const Name: string;
+                export const Year: string;
+            }
+        }
     }
 
     export declare namespace Forms {
@@ -171,6 +196,11 @@ const Texts: typeof texts = proxyTexts({}, '', {
         },
         Default: {
             Movie: {}
+        },
+        Games: {
+            Games: {},
+            Logs: {},
+            Platforms: {}
         }
     },
     Forms: {

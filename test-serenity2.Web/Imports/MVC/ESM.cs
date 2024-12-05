@@ -2,9 +2,12 @@
 
 public static partial class ESM
 {
+    public const string GamesPage = "~/esm/Modules/Games/Games/GamesPage.js";
     public const string LanguagePage = "~/esm/Modules/Administration/Language/LanguagePage.js";
     public const string LoginPage = "~/esm/Modules/Membership/Account/Login/LoginPage.js";
+    public const string LogsPage = "~/esm/Modules/Games/Logs/LogsPage.js";
     public const string MoviePage = "~/esm/Modules/Default/Movie/MoviePage.js";
+    public const string PlatformsPage = "~/esm/Modules/Games/Platforms/PlatformsPage.js";
     public const string RolePage = "~/esm/Modules/Administration/Role/RolePage.js";
     public const string ScriptInit = "~/esm/Modules/Common/ScriptInit.js";
     public const string SignUpPage = "~/esm/Modules/Membership/Account/SignUp/SignUpPage.js";
@@ -46,6 +49,24 @@ public static partial class ESM
             public static partial class Movie
             {
                 public const string MoviePage = "~/esm/Modules/Default/Movie/MoviePage.js";
+            }
+        }
+
+        public static partial class Games
+        {
+            public static partial class Games_
+            {
+                public const string GamesPage = "~/esm/Modules/Games/Games/GamesPage.js";
+            }
+
+            public static partial class Logs
+            {
+                public const string LogsPage = "~/esm/Modules/Games/Logs/LogsPage.js";
+            }
+
+            public static partial class Platforms
+            {
+                public const string PlatformsPage = "~/esm/Modules/Games/Platforms/PlatformsPage.js";
             }
         }
 
